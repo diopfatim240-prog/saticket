@@ -1,0 +1,64 @@
+RewriteEngine On
+
+# Global
+RewriteRule ^admin$ admin.php
+RewriteRule ^admin$ index.php
+RewriteRule ^login$ login.php
+
+#View commandes
+RewriteRule ^listeCommandes$ view/pages/admin/commandes/liste.php
+RewriteRule ^ajoutCommandes$ view/pages/admin/commandes/liste.php
+RewriteRule ^listeCommandes$ view/pages/admin/commandes/corbeille.php
+ 
+
+#View commentaire
+RewriteRule ^listeCommentaire$ view/pages/admin/commentaire/liste.php
+RewriteRule ^modererCommentaire$ view/pages/admin/commentaire/liste.php
+RewriteRule ^listeCommentaire$ view/pages/admin/commentaire/corbeille.php
+
+
+#View evenements
+RewriteRule ^listeEvenements$ view/pages/admin/evenements/liste.php
+RewriteRule ^ajoutEvenements$ view/pages/admin/evenements/liste.php
+RewriteRule ^listeEvenements$ view/pages/admin/evenements/corbeille.php
+
+#View paiement
+RewriteRule ^listePaiement$ view/pages/admin/paiement/liste.php
+RewriteRule ^ajoutPaiement$ view/pages/admin/paiement/liste.php
+RewriteRule ^listePaiement$ view/pages/admin/paiement/corbeille.php
+
+
+#View promotions
+RewriteRule ^listePromotions$ view/pages/admin/promotions/liste.php
+RewriteRule ^ajoutPromotions$ view/pages/admin/promotions/liste.php
+RewriteRule ^listePromotions$ view/pages/admin/promotions/corbeille.php
+
+
+#View tickets
+RewriteRule ^listeTickets$ view/pages/admin/tickets/liste.php
+RewriteRule ^ajoutTickets$ view/pages/admin/tickets/liste.php
+RewriteRule ^listeTickets$ view/pages/admin/tickets/corbeille.php
+
+#View utilisateurs
+RewriteRule ^listeUtilisateurs$ view/pages/admin/utilisateurs/liste.php
+RewriteRule ^ajoutUtilisateurs$ view/pages/admin/utilisateurs/liste.php
+RewriteRule ^listeUtilisateurs$ view/pages/admin/utilisateurs/corbeille.php
+
+
+#user controller
+RewriteRule ^utilisateursController$ controller/UtilisateursController.php
+RewriteRule ^commandesController$ controller/CommandesController.php
+RewriteRule ^commentaireController$ controller/CommentaireController.php    
+RewriteRule ^evenementsController$ controller/EvenementsController.php
+RewriteRule ^paiementController$ controller/PaiementController.php
+RewriteRule ^promotionsController$ controller/PromotionsController.php
+RewriteRule ^ticketsController$ controller/TicketsController.php
+
+#model
+RewriteRule ^utilisateursRepository$ model/UtilisateursRepository.php
+RewriteRule ^commandesRepository$ model/CommandesRepository.php
+RewriteRule ^commentaireRepository$ model/CommentaireRepository.php    
+RewriteRule ^evenementsRepository$ model/EvenementsRepository.php
+RewriteRule ^paiementRepository$ model/PaiementRepository.php
+RewriteRule ^promotionsRepository$ model/PromotionsRepository.php
+RewriteRule ^ticketsRepository$ model/TicketsRepository.php
