@@ -1,7 +1,5 @@
 RewriteEngine On
 
-apache
-DirectoryIndex login.php
 
 # Global
 RewriteRule ^admin$ admin.php
