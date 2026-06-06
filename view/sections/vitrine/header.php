@@ -81,7 +81,7 @@
     </nav>
 
     <!-- Bouton Se Connecter -->
-    <a href="login.php" class="btn-login">
+    <a href="/saticket/login.php" class="btn-login">
       Se connecter
     </a>
 
